@@ -152,7 +152,7 @@ namespace TEDinc.Utils.Json
 
 
 
-            string CollectionToJson<T>(T collection) where T : ICollection
+            string CollectionToJson<TCollection>(TCollection collection) where TCollection : ICollection
             {
                 string json = "[\n\t";
                 int i = 0;
